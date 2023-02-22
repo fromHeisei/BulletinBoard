@@ -5,9 +5,12 @@ import { BulletListContainer } from "./BulletListContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">掲示板</header>
-      <BulletListContainer />
+    <div class="App">
+      <header class="App-header">掲示板</header>
+      <div class="bullet">
+        <h1>新着スレッド</h1>
+        <BulletListContainer />
+      </div>
     </div>
   );
 }

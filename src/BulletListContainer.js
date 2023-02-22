@@ -16,10 +16,10 @@ export function BulletListContainer() {
 
   const listItems = bulletList.map((bullet) => {
     return (
-      <li key={bullet} value={bullet}>
+      <h2 key={bullet} value={bullet}>
         {bullet.title}
-      </li>
+      </h2>
     );
   });
-  return <ul>{listItems}</ul>;
+  return <div class="listItems">{listItems}</div>;
 }
