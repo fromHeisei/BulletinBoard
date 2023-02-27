@@ -1,6 +1,6 @@
 import React from "react";
 
-export function bulletForm() {
+export function BulletForm() {
   return (
     <div>
       <h1>Hello!</h1>
