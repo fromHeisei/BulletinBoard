@@ -19,11 +19,14 @@ export function BulletListContainer() {
     return (
       <div>
         <h2 key={bullet} value={bullet}>
-          {bullet.title}
+          <Link
+            to={"/threadpost"}
+            state={bullet.id}
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            {bullet.title}
+          </Link>
         </h2>
-        <Link to={"/threadpost"} state={bullet.id}>
-          スレッドを見る
-        </Link>
       </div>
     );
   });
