@@ -34,6 +34,7 @@ export function ThreadPost() {
       }
     );
     window.location.reload();
+    alert("投稿しました。");
   };
   return (
     <div>
@@ -42,7 +43,7 @@ export function ThreadPost() {
         value={postThread}
         onChange={(event) => setPostThread(event.target.value)}
       />
-      <button onClick={clickButton}>新規スレッドを作成</button>
+      <button onClick={clickButton}>投稿する</button>
       <div class="threadItems">{threadItems}</div>
     </div>
   );
